@@ -1,0 +1,23 @@
+<div id="<%= dom_id fruit %>">
+  <div class="bg-white shadow-md rounded-lg p-6 flex items-center">
+    <%= image_tag(fruit.image_url, class: "w-24 h-24 mr-4") %>
+
+    <div>
+      <h2 class="text-xl font-semibold mb-4">Fruit Details</h2>
+
+      <div class="my-4">
+        <p class="text-gray-600"><strong class="font-medium">Name:</strong> <%= fruit.name %></p>
+        <p class="text-gray-600"><strong class="font-medium">Color:</strong> <%= fruit.color %></p>
+        <p class="text-gray-600"><strong class="font-medium">Flavor:</strong> <%= fruit.flavor %></p>
+        <p class="text-gray-600"><strong class="font-medium">Weight:</strong> <%= fruit.weight %> grams</p>
+        <p class="text-gray-600"><strong class="font-medium">Price:</strong> $<%= fruit.price %></p>
+        <p class="text-gray-600"><strong class="font-medium">Availability:</strong> <%= fruit.availability ? 'Available' : 'Not available' %></p>
+      </div>
+
+      <% if action_name != "show" %>
+        <%= link_to "Show this fruit", fruit, class: "btn bg-gray-200 hover:bg-gray-300" %>
+        <%= link_to "Edit this fruit", edit_fruit_path(fruit), class: "btn bg-gray-200 hover:bg-gray-300 ml-2" %>
+      <% end %>
+    </div>
+  </div>
+</div>
