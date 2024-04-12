@@ -22,7 +22,7 @@
       <% @fruits.each do |fruit| %>
         <tr class="py-4 <%= cycle('bg-green-50', 'bg-white') %>">
           <td class="px-2 py-3">
-            <%= image_tag(fruit.image_url, class: 'w-40') %>
+            <%= image_tag(fruit.image_url, class: 'w-40', alt: "imagen.jpg") %>
           </td>
 
           <td>
