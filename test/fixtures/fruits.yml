@@ -1,0 +1,28 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  color: MyString
+  flavor: MyString
+  weight: 1.5
+  price: 9.99
+  availability: false
+  image_url: apple.jpg
+
+two:
+  name: MyString
+  color: MyString
+  flavor: MyString
+  weight: 1.5
+  price: 9.99
+  availability: false
+  image_url: apple.jpg
+
+apple:
+  name: Apple
+  color: Red
+  flavor: Sweet
+  weight: 150
+  price: 1.99
+  availability: true
+  image_url: apple.jpg
